@@ -1,0 +1,155 @@
+"use client";
+import React, { useTransition, useState } from "react";
+import Image from "next/image";
+import TabButton from "./TabButton";
+
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Language:</b>
+          C, C++,Python,Javascript, HTML, CSS </li>
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4" >Framework:</b>
+          Node.js, React.js, Next.js </li>
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Database:</b>
+           MongoDB,AWS </li>
+        <li> 
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">IT Constructs:</b>
+          DSA,OOPS</li>
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Tools:</b>
+          Visual Studio,Git & GitHub, Figma, Canva, Latex
+        </li>
+        <li>
+        <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4" >More:</b>
+        GDSC,Github Devloper Pack,MLSA,Open-Source,Public Speaking
+
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Dr. Ambedkar Institute of technology for handicapped,Kanpur B.Tech(CSE)</b>
+          <br />
+          2022-2026||9.3 SGPA
+          </li>
+        <li>
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Saraswati Shiksha Niketan Inter College Krishna Nagar,Ghaziabad,UP</b>
+           <br />
+           12th||80%
+      </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Azure Fundamentals Challenge(Microsoft Learn Student Ambassdor)</li>
+        <li>Geeks For Geeks Hack Fest Delhi NCR</li>
+        <li>Coding Ninja World Cup Competition AIR-(502)</li>
+        <li>College Internal Hackathon Winner</li>
+
+      </ul>
+    ),
+  },
+];
+
+const AboutSection = () => {
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
+
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
+
+  return (
+    <section className="text-white" id="about">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <Image src="/images/about-image.png" width={500} height={500} />
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">About Me</h2>
+          <p className="text-base lg:text-lg">
+          Hi, I'm Harikesh Tripathi, a tech enthusiast and B.Tech student. I'm on a journey of discovery and growth in the world of technology. As a full stack web developer, I'm passionate about crafting interactive and responsive web applications using JavaScript, React, Redux, Node.js, Express, HTML, CSS, and Git. I'm a strong advocate for collaboration and believe in the magic of sharing knowledge. If you're ever looking to discuss tech-related ideas or need assistance, feel free to reach out anytime. Let's connect and explore the exciting world of technology together!
+          </p>
+          <div className="flex flex-row justify-start mt-8">
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              {" "}
+              Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
+            >
+              {" "}
+              Certifications{" "}
+            </TabButton>
+          </div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
+          </div>
+        </div>
+      </div>
+      
+      <section class="bg-white mt-16 mb-8 py-8 overflow-hidden" style={{background:"url('https://ouch-cdn2.icons8.com/E566LHM6xxXUdB6rkuCnPIPd9M9xD5hbVN8vxoO7Y0M/rs:fit:368:299/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzc1/LzYyYThlZmJkLTVi/OGItNGViYi05ZTk1/LTJlZTdiMDI4N2Yx/OS5wbmc.png');background-position:center;background-size:contain;background-repeat:no-repeat"}}>
+        <div class="bg-transparent">
+          <h2 class="font-bold mb-32 w-full text-center text-4xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900">Experience</h2>
+          <div class="w-[75%] mx-auto relative">
+            <div style={{transform: "scaleY(0.772101) translateZ(0px);"}} class="absolute -left-1 md:left-9 top-0 w-[4px] h-full  bg-white md:bg-black  origin-top"></div>
+            <ul class="w-full flex flex-col items-start justify-between ml-4">
+              <li class="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg">
+                <figure class="absolute -left-10 md:left-0  stroke-black">
+                <svg class="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+
+               <circle cx="75" cy="50" r="20" class="stroke-yellow-900 stroke-1 fill-none"></circle>
+               <circle cx="75" cy="50" r="20" class=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px" ></circle>
+               <circle cx="75" cy="50" r="10" class="animate-pulse stroke-1 fill-yellow-900"></circle>
+                </svg>
+                </figure>
+                <div style={{opacity: "1; transform: none;"}}>
+                <h3 class="capitalize font-bold text-xl sm:text-2xl">Google Developer Student Club&nbsp;<a href="https://www.linkedin.com/in/harikesh-tripathi-7841a0181/" target="_blank" class="text-yellow-900 capitalize">@GDSC</a></h3>
+                <span class="capitalize font-medium text-dark/75">Aug 2023 - Present|Kanpur</span>
+                <p class="font-medium w-full text-xs ">•Competitive Programming Cordinator:Actively engaged in competitive programming on various platforms. • Leadership: As an Active Coordinator, contributed to the growth of the Google Developer Student Club, focusing on
+                    fostering a culture of coding enthusiasm and skill development.</p>
+                </div>
+              </li>
+
+              <li class="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg"><figure class="absolute -left-10 md:left-0  stroke-black"><svg class="-rotate-90" width="75" height="75" viewBox="0 0 100 100"><circle cx="75" cy="50" r="20" class="stroke-yellow-900 stroke-1 fill-none"></circle><circle cx="75" cy="50" r="20" class=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle><circle cx="75" cy="50" r="10" class="animate-pulse stroke-1 fill-yellow-900"></circle></svg></figure><div style={{opacity: "1; transform: none;"}}><h3 class="capitalize font-bold text-xl sm:text-2xl">Microsoft Student Technical Training&nbsp;<a href="https://learn.microsoft.com/en-us/users/harikeshtripathi-6909/" target="_blank" class="text-yellow-900 capitalize"></a></h3><span class="capitalize font-medium text-dark/75">Jan 2024 - feb 2024| <a href="https://learn.microsoft.com/en-us/users/harikeshtripathi-6909/" target="_blank" class="text-yellow-900 capitalize"  > MLSA </a>
+            </span><p class="font-medium w-full text-xs ">In Microsoft  Learn Student Ambasdor Selection Process I got Opportunity to do Student technical training Program
+             along that i also learn about Generative AI and Azure Open AI.along that i also participated in MLSA Azure Fundamentals Challenge</p></div></li>
+              <li class="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg"><figure class="absolute -left-10 md:left-0  stroke-black"><svg class="-rotate-90" width="75" height="75" viewBox="0 0 100 100"><circle cx="75" cy="50" r="20" class="stroke-yellow-900 stroke-1 fill-none"></circle><circle cx="75" cy="50" r="20" class=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle><circle cx="75" cy="50" r="10" class="animate-pulse stroke-1 fill-yellow-900"></circle></svg></figure><div style={{opacity: "1; transform: none;"}}><h3 class="capitalize font-bold text-xl sm:text-2xl">National Enterpreneurship Challenge&nbsp;<a href="www.uipath.com" target="_blank" class="text-yellow-900 capitalize"></a></h3><span class="capitalize font-medium text-dark/75">Sep 2023 - Feb 2024 |IIT-Bombay(NEC Finalist)</span><p class="font-medium w-full text-xs ">• I Participated Six Month Long Challenge focusing on building and fostering your own Entrepreneurship Cell.</p></div></li>
+              <li class="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg"><figure class="absolute -left-10 md:left-0  stroke-black"><svg class="-rotate-90" width="75" height="75" viewBox="0 0 100 100"><circle cx="75" cy="50" r="20" class="stroke-yellow-900 stroke-1 fill-none"></circle><circle cx="75" cy="50" r="20" class=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle><circle cx="75" cy="50" r="10" class="animate-pulse stroke-1 fill-yellow-900"></circle></svg></figure><div style={{opacity: "1; transform: none;"}}><h3 class="capitalize font-bold text-xl sm:text-2xl">Geeks For Geeks Hack Fest&nbsp;<a href="https://www.linkedin.com/posts/harikesh-tripathi-7841a0181_hackfest-ncr-activity-7174750341555527681-S-j7?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-yellow-900 capitalize"></a></h3><span class="capitalize font-medium text-dark/75">Dec 2023 - Jan 2024|<a href="https://www.linkedin.com/posts/harikesh-tripathi-7841a0181_hackfest-ncr-activity-7174750341555527681-S-j7?utm_source=share&utm_medium=member_desktop"   class="text-yellow-900 capitalize">Delhi NCR</a></span><p class="font-medium w-full text-xs ">I Seriously Involved One Month Long Hackathon Challenge in which i build HealthCare Innovation Web Application that able to tackle continuously data gathering critical challenge promoting healthy lifestyle and wellness practices and many more services like Realtime hospital availability and ambulance 🚑 booking with tracking and managing parent past history EHRs and virtual Consultation with doctors  </p></div></li>
+            </ul> 
+          </div>
+        </div>
+      </section>
+           
+       
+    </section>
+  );
+};
+
+export default AboutSection;
