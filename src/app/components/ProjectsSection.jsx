@@ -5,6 +5,7 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+  // take one array and inside that we store the multiple object key:value pair 
   {
     id: 1,
     title: "HealthCare Innovation",
@@ -25,21 +26,22 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "ChatBot",
-    description: "I am  used Microsoft DialoGPT, a pre-trained language model that can generate human-like responses to given prompts. I am integrating DialoGPT with Flask, a popular Python web framework, to create a web application that can communicate with users via a chat interface. For the frontend part i uesd  html css and javascript",
+    title: "Razorpay Web Application",
+    description: "I successfully developed a sophisticated clone of Razorpay, a premier payment gateway, using HTML and Tailwind CSS. This project underscores my proficiency in front-end web development and my ability to recreate complex, modern web applications with a focus on both aesthetics and functionality The clone is meticulously designed to be fully responsive.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/Chatbot.git",
-    previewUrl: "/",
+    gitUrl: "https://github.com/hari659tri/Razorpay-Website.git",
+    previewUrl: "https://razorpayweb.netlify.app/",
   },
   {
     id: 4,
-    title: "Spotify Web Clone",
-    description: "This is a  spotify clone Web Application that Will i am made Using with the help of html css and javaScript. That Have Various Features Like Play, Pause, Next, Previous, Shuffle, Repeat, Volume Control, Seekbar, Playlist, and many more.",
+    title: "Random_Password_Generator-Web_App",
+    description: "This is random Password generator with many functionality i made it with the help of html CSS Javascript and used one famous algorithm fisher yates Algorithm to shuffle the password so that it will be more secure and strong becomes password generator app has main key features like Creates strong passwords with uppercase, lowercase, numbers, and special characters or symbols.you can copy the password to the clipboard",
+
     image: "/images/projects/4.png",
     tag: ["All", "Design"],
-    gitUrl: "https://github.com/hari659tri/Spotify-Clone-Website.git",
-    previewUrl: "https://spotify-clone12w.netlify.app/",
+    gitUrl: "https://github.com/hari659tri/Random_PassWord_Generator-Web-App-.git",
+    previewUrl: "https://hari659tri.github.io/Random_PassWord_Generator-Web-App-/",
   },
   {
     id: 5,
@@ -52,13 +54,14 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Netflix Clone",
-    description: "This is a Netflix clone Web Application that Will i am made Using with the help of html css .That Have Various Features Like",
+    title: "Parrlex Effect",
+    description: "Excited to Share: Mastered Advanced CSS for Stunning Parallax Effect! 🚀 🎨 Elevating my web design game with a touch of magic! ✨ After diving deep into the world of Advanced CSS",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/Netflix_Clone.git",
+    gitUrl: "https://github.com/hari659tri/parralexEffect.git",
     previewUrl: "/",
   },
+  
 ];
 
 const ProjectsSection = () => {
