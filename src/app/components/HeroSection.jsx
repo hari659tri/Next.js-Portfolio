@@ -54,7 +54,7 @@ const HeroSection = () => {
               <span class="px-16 py-3 block gradient-to-br from-yellow-200 hover:bg-[#121212] hover:border hover:border-indigo-200 border-y-indigo-500 rounded-full">Book A Call</span>
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1G22KK4CBNXc-GaQTzsAFMDUa0SQQgpVu/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1UL_uwm-w_n9G1iT2d4MOVwACN1cwzcB8/view?usp=drivesdk"
               className="sm:w-auto rounded-full bg-gradient-to-br from-yellow-300 to-yellow-900 hover:bg-slate-800 text-white mt-3 ml-3"
             >
               <span class="px-16 py-3 block gradient-to-br from-yellow-200 hover:bg-[#121212] hover:border hover:border-indigo-200 border-y-indigo-500 rounded-full">

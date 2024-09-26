@@ -45,12 +45,12 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "To-Do App",
-    description: "Using a Create Read Update Delete(CRUD) operations I made a To-Do App that is used to manage the daily tasks of the user. The user can add, delete, and update the tasks. The user can also mark the task as completed. The user can also search for the tasks.The user can also filter the tasks based on the status of the task. The user can also perform the bulk",
+    title: "LeetCode-Metrics-Dashboard",
+    description: "This project provides a comprehensive dashboard displaying detailed user activity and statistics from LeetCode. It fetches data using LeetCode s GraphQL API and a proxy URL to bypass CORS restrictions Features are User profile activity overview, Total submissions, Questions solved categorized by difficulty: Easy, Medium, Hard, Clean and intuitive user interface",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/to-do-list.git",
-    previewUrl: "https://hari659tri.github.io/to-do-list/",
+    gitUrl: "https://github.com/hari659tri/LeetCode-Metrics-Dashboard.git",
+    previewUrl: "https://leet-code-metrics-dashboard.vercel.app/",
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/hari659tri/parralexEffect.git",
-    previewUrl: "/",
+    previewUrl: "https://parralexeffect.netlify.app/",
   },
   
 ];
