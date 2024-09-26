@@ -130,9 +130,9 @@ const AboutSection = () => {
                 </svg>
                 </figure>
                 <div style={{opacity: "1; transform: none;"}}>
-                <h3 className="capitalize font-bold text-xl sm:text-2xl">Google Developer Group(TechLead)<a href="https://www.linkedin.com/in/harikesh-tripathi-7841a0181/" target="_blank" className="text-yellow-900 capitalize">@GDG</a></h3>
+                <h3 className="capitalize font-bold text-xl sm:text-2xl">Google Developer Group<a href="https://www.linkedin.com/in/harikesh-tripathi-7841a0181/" target="_blank" className="text-yellow-900 capitalize">@GDG</a></h3>
                 <span className="capitalize font-medium text-dark/75">Sep 2024 - Present|Kanpur</span>
-                <p className="font-medium w-full text-xs ">•Tech Lead: I have a deep passion for technology, and being a Tech Lead in the GDG (Google Developer Group) on campus allows me to share that passion with others. As a GDG Lead, I focus on bridging the gap between theoretical knowledge and real-world development by organizing various events and workshops to empower students in technology. Additionally, as an Active Coordinator, I contribute to the growth of the Google Developer Group, fostering a culture of coding enthusiasm and skill development.</p>
+                <p className="font-medium w-full text-xs ">•<b>Tech Lead:</b> I have a deep passion for technology, and being a Tech Lead in the GDG (Google Developer Group) on campus allows me to share that passion with others. As a GDG Lead, I focus on bridging the gap between theoretical knowledge and real-world development by organizing various events and workshops to empower students in technology. Additionally, as an Active Coordinator, I contribute to the growth of the Google Developer Group, fostering a culture of coding enthusiasm and skill development.</p>
                 </div>
               </li>
 
