@@ -17,12 +17,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Cryptocurrency Live Price Tracker",
-    description: "this is live price tell of cryptocurrency based On current Actual Market Price,Price Accuracy 100%,because in this I fetched api From the The most reliable & comprehensive cryptocurrency data API for traders and developers(Geek Coin)Live Price of Cryptocurrency",
+    title: "Object-Detection-ML-Model",
+    description: "I have developed an object detection model using React.js and TensorFlow.js, leveraging the pre-trained COCO-SSD model from @tensorflow-models/coco-ssd. To capture real-time data, I integrated the react-webcam library, which allows seamless webcam input. This project enhances my learning experience by enabling real-time object detection",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/CryptoCurrency.git",
-    previewUrl: "https://harti659tricryptocurrprice.netlify.app/",
+    gitUrl: "https://github.com/hari659tri/Object-Detection-ML-Model-.git",
+    previewUrl: "https://object-detection-ml-model.vercel.app/",
   },
   {
     id: 3,
@@ -35,8 +35,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Random_Password_Generator-Web_App",
-    description: "This is random Password generator with many functionality i made it with the help of html CSS Javascript and used one famous algorithm fisher yates Algorithm to shuffle the password so that it will be more secure and strong becomes password generator app has main key features like Creates strong passwords with uppercase, lowercase, numbers, and special characters or symbols.you can copy the password to the clipboard",
+    title: "ECELL&ISC Offical Website",
+    description: "This repository contains the React-based source code for the official website of the Entrepreneurship Cell (E-Cell) at Dr. Ambedkar Institute of Technology for Handicapped, Kanpur. The E-Cell is committed to fostering entrepreneurship among students by providing a platform for innovation, collaboration, and business mentorship.",
 
     image: "/images/projects/4.png",
     tag: ["All", "Design"],
@@ -45,23 +45,24 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "LeetCode-Metrics-Dashboard",
-    description: "This project provides a comprehensive dashboard displaying detailed user activity and statistics from LeetCode. It fetches data using LeetCode s GraphQL API and a proxy URL to bypass CORS restrictions Features are User profile activity overview, Total submissions, Questions solved categorized by difficulty: Easy, Medium, Hard, Clean and intuitive user interface",
+    title: "Gemini-2.0",
+    description: "Gemini@2.0 is an AI-driven web application built using React.js, designed to deliver advanced insights and user interaction through the integration of the Gemini API and Google AI Studio. This project highlights the fusion of AI with modern web development, providing a responsive and efficient interface for users to engage with AI-powered functionalities seamlessly.",
+
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/LeetCode-Metrics-Dashboard.git",
-    previewUrl: "https://leet-code-metrics-dashboard.vercel.app/",
+    tag: ["All", "Design"],
+    gitUrl: "https://github.com/hari659tri/Random_PassWord_Generator-Web-App-.git",
+    previewUrl: "https://hari659tri.github.io/Random_PassWord_Generator-Web-App-/",
   },
   {
     id: 6,
-    title: "Parrlex Effect",
-    description: "Excited to Share: Mastered Advanced CSS for Stunning Parallax Effect! 🚀 🎨 Elevating my web design game with a touch of magic! ✨ After diving deep into the world of Advanced CSS",
+    title: "LeetCode-Metrics-Dashboard",
+    description: "This project provides a comprehensive dashboard displaying detailed user activity and statistics from LeetCode. It fetches data using LeetCode's GraphQL API and a proxy URL to bypass CORS restrictions.",
+
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/parralexEffect.git",
-    previewUrl: "https://parralexeffect.netlify.app/",
+    tag: ["All", "Design"],
+    gitUrl: "https://github.com/hari659tri/LeetCode-Metrics-Dashboard.git",
+    previewUrl: "https://leet-code-metrics-dashboard.vercel.app/",
   },
-  
 ];
 
 const ProjectsSection = () => {

@@ -135,6 +135,26 @@ const AboutSection = () => {
                 <p className="font-medium w-full text-xs ">•<b>Tech Lead:</b> I have a deep passion for technology, and being a Tech Lead in the GDG (Google Developer Group) on campus allows me to share that passion with others. As a GDG Lead, I focus on bridging the gap between theoretical knowledge and real-world development by organizing various events and workshops to empower students in technology. Additionally, as an Active Coordinator, I contribute to the growth of the Google Developer Group, fostering a culture of coding enthusiasm and skill development.</p>
                 </div>
               </li>
+               
+               {/* start here  */}
+
+               <li className="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg">
+                <figure className="absolute -left-10 md:left-0  stroke-black">
+                <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+
+               <circle cx="75" cy="50" r="20" className="stroke-yellow-900 stroke-1 fill-none"></circle>
+               <circle cx="75" cy="50" r="20" className=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px" ></circle>
+               <circle cx="75" cy="50" r="10" class="animate-pulse stroke-1 fill-yellow-900"></circle>
+                </svg>
+                </figure>
+                <div style={{opacity: "1; transform: none;"}}>
+                <h3 className="capitalize font-bold text-xl sm:text-2xl">Geeks For Geeks Campus Lead<a href="https://www.linkedin.com/in/harikesh-tripathi-7841a0181/" target="_blank" className="text-yellow-900 capitalize">@GFG</a></h3>
+                <span className="capitalize font-medium text-dark/75">Jun 2024 - Present|Kanpur</span>
+                <p className="font-medium w-full text-xs ">•<b>:</b>Becoming a GeeksforGeeks Campus Lead is an exciting leadership role that allows students to bridge the gap between theoretical computer science concepts and practical, industry-relevant skills. As a Campus Lead, you represent GeeksforGeeks on your campus, spearheading initiatives that foster a community of aspiring developers, problem solvers, and tech enthusiasts.like Community Building,Skill Development,Leadership and Mentorship etc.</p>
+                </div>
+              </li>
+
+               {/* end here  */}
 
               <li className="text-black my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between bg-gradient-to-r from-yellow-300 via-white to-yellow-900 p-4 rounded-lg shadow-lg"><figure className="absolute -left-10 md:left-0  stroke-black"><svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100"><circle cx="75" cy="50" r="20" className="stroke-yellow-900 stroke-1 fill-none"></circle><circle cx="75" cy="50" r="20" class=" stroke-[5px] fill-white" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle><circle cx="75" cy="50" r="10" className="animate-pulse stroke-1 fill-yellow-900"></circle></svg></figure><div style={{opacity: "1; transform: none;"}}><h3 className="capitalize font-bold text-xl sm:text-2xl">Microsoft Student Technical Training<a href="https://learn.microsoft.com/en-us/users/harikeshtripathi-6909/" target="_blank" className="text-yellow-900 capitalize"></a></h3><span className="capitalize font-medium text-dark/75">Jan 2024 - feb 2024| <a href="https://learn.microsoft.com/en-us/users/harikeshtripathi-6909/" target="_blank" className="text-yellow-900 capitalize"  > MLSA </a>
             </span><p className="font-medium w-full text-xs ">In Microsoft  Learn Student Ambasdor Selection Process I got Opportunity to do Student technical training Program
