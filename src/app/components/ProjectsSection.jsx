@@ -40,8 +40,8 @@ const projectsData = [
 
     image: "/images/projects/4.png",
     tag: ["All", "Design"],
-    gitUrl: "https://github.com/hari659tri/Random_PassWord_Generator-Web-App-.git",
-    previewUrl: "https://hari659tri.github.io/Random_PassWord_Generator-Web-App-/",
+    gitUrl: "https://github.com/hari659tri/React-App-ECELL_AITH.git",
+    previewUrl: "https://react-app-ecell-aith.vercel.app/",
   },
   {
     id: 5,
@@ -50,8 +50,8 @@ const projectsData = [
 
     image: "/images/projects/5.png",
     tag: ["All", "Design"],
-    gitUrl: "https://github.com/hari659tri/Random_PassWord_Generator-Web-App-.git",
-    previewUrl: "https://hari659tri.github.io/Random_PassWord_Generator-Web-App-/",
+    gitUrl: "https://github.com/hari659tri/Gemini-2.0.git",
+    previewUrl: "https://gemini-2-0-pwyb.vercel.app/",
   },
   {
     id: 6,
