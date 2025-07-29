@@ -8,12 +8,12 @@ const projectsData = [
   // take one array and inside that we store the multiple object key:value pair 
   {
     id: 1,
-    title: "HealthCare Innovation",
-    description: "this Is my HealthCare Website under Hack-a-thon HackFest( Delhi/NCR) GEEKS FOR Geeks which is Now Live .The system should continuously gather and analyze healthcare data while promoting healthy lifestyles and wellness practices.",
+    title: "Finlyzer",
+    description: "Finlyzer — Finance Visualizer Web App : Finlyzer (Finance + Visualizer) is a modern, full-stack personal finance management web application that helps users track expenses, set monthly budgets, and get intelligent alerts and email reports — all through a secure, scalable, and AI-powered experience.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/healthCare-Solution-.git",
-    previewUrl: "https://healthcareinnovationorg.netlify.app/",
+    gitUrl: "https://github.com/hari659tri/Finlyzer",
+    previewUrl: "https://finlyzer.vercel.app/",
   },
   {
     id: 2,
@@ -26,12 +26,12 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Razorpay Web Application",
-    description: "I successfully developed a sophisticated clone of Razorpay, a premier payment gateway, using HTML and Tailwind CSS. This project underscores my proficiency in front-end web development and my ability to recreate complex, modern web applications with a focus on both aesthetics and functionality The clone is meticulously designed to be fully responsive.",
+    title: "AIResume-Builder",
+    description: "🧠 AI Resume Builder is a full-stack web app for creating and customizing resumes with AI. It features live editing, theme selection, PDF downloads, and shareable links. Built with React, Tailwind CSS, and Strapi v5 (SQLite), it’s hosted on Vercel (frontend) and Render (backend) for seamless deployment",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/hari659tri/Razorpay-Website.git",
-    previewUrl: "https://razorpayweb.netlify.app/",
+    gitUrl: "https://github.com/hari659tri/AIResume-Builder",
+    previewUrl: "https://go.screenpal.com/watch/cTf0qpnjNqR",
   },
   {
     id: 4,
