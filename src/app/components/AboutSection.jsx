@@ -11,23 +11,23 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Language:</b>
-          C, C++,Python,Javascript, HTML, CSS </li>
+          C, C++,Python,Javascript, HTML, CSS,TailwindCSS </li>
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4" >Framework:</b>
-          Node.js, React.js, Next.js </li>
+          Node.js, React.js, Next.js,Express.js </li>
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Database:</b>
-           MongoDB,AWS </li>
+           MongoDB,Firebase,Strapi </li>
         <li> 
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">IT Constructs:</b>
-          DSA,OOPS</li>
+          DSA,OOPS,OS,DBMS,CN,Apptitude</li>
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Tools:</b>
           Visual Studio,Git & GitHub, Figma, Canva, Latex
         </li>
         <li>
         <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4" >More:</b>
-        GDSC,Github Devloper Pack,MLSA,Open-Source,Public Speaking
+        GDSC,Github Student Devloper Pack,MLSA,Open-Source,Public Speaking
 
         </li>
       </ul>
@@ -41,7 +41,7 @@ const TAB_DATA = [
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Dr. Ambedkar Institute of technology for handicapped,Kanpur B.Tech(CSE)</b>
           <br />
-          2022-2026||9.3 SGPA
+          2022-2026||8.5 CGPA
           </li>
         <li>
           <b className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">Saraswati Shiksha Niketan Inter College Krishna Nagar,Ghaziabad,UP</b>
@@ -83,7 +83,18 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-900 mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Hi, I'm Harikesh Tripathi, a tech enthusiast and B.Tech student. I'm on a journey of discovery and growth in the world of technology. As a full stack web developer, I'm passionate about crafting interactive and responsive web applications using JavaScript, React, Redux, Node.js, Express, HTML, CSS, and Git. I'm a strong advocate for collaboration and believe in the magic of sharing knowledge. If you're ever looking to discuss tech-related ideas or need assistance, feel free to reach out anytime. Let's connect and explore the exciting world of technology together!
+
+Hello!👋<br/>
+I'm Harikesh Tripathi, a final-year B.Tech student in Computer Science and Engineering, passionate about building real-world tech solutions and continuously improving my problem-solving skills. I thrive at the intersection of development and competitive programming.<br/>
+<br/>
+💡 Data Structures & Algorithms (DSA):
+With over 1,500 problems solved on various platforms, including Codeforces (1171), 2⭐ on CodeChef (1427), and LeetCode with a Max rating (1600), I’ve developed a deep understanding of algorithms and data structures. I regularly participate in coding contests to keep my skills sharp and interview-ready.<br/> 
+<br/>
+💻 Development (Full Stack-MERN):
+I build full-stack web applications using the MERN stack, combining clean and responsive frontends with robust, scalable backends. I work with technologies like React.js, Tailwind CSS, Node.js, Express, and MongoDB, and follow industry best practices for version control, API design, and deployment.<br/> 
+<br/>
+🌟 Leadership & Community:
+In addition to these, I serve as the GDG Tech Lead and GFG Campus Lead, where I lead technical workshops, mentor peers, and organize coding events. These roles have enhanced my leadership, communication, and collaboration skills while allowing me to give back to the developer community
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
